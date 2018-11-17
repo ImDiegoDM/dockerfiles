@@ -1,0 +1,6 @@
+version: '3'
+services:
+  web:
+    image: php:7.2-apache
+  db:
+    image: redis:5

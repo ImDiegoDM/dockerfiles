@@ -1,0 +1,12 @@
+version: '3'
+services:
+  http:
+    image: httpd:2.4
+  dotnet:
+    image: microsoft/dotnet:2.1-runtime-deps-alpine3.7
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example

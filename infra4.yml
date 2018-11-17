@@ -1,0 +1,8 @@
+version: '3'
+services:
+  http:
+    image: nginx
+  web:
+    image: openjdk:8-jdk-alpine
+  db:
+    image: postgres
